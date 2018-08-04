@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            QNotes
+        </title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Old+Standard+TT" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <body>
+    <div class="container">  
+
+        <div class="navbar">
+             <div class="wrapper">
+                
+                <div class="judul">::Q Notes::</div>
+            </div>
+            <ul>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <div id="leftContent">
+                <div class="card">
+                    <div class="cardheader" onclick="hapusNote()" >X</div>
+                    <div class="cardMain">"Selamat datang di QNotes web app, kamu bisa menyimpan catatan apapun disini dan membagikannya kepada teman-teman mu!, ayo! jangan biarkan inspirasimu hilang dalam kenangan. post Qnotes-Mu sekarang!"</div>
+                    <div class="cardFooter">adit</div>
+                </div>
+                
+                
+            </div>
+            <div id="rightContent">
+                <form id="postForm" action="#" onsubmit="onsubmitFunction()">
+                    <label for="username">Username :</label><br>
+                    <input id="username" required=1 type="text" value='' onclick="bersih()">
+                    <br>
+                    <label for="postContent">Your QNotes :</label><br>
+                    <textarea id="postContent" required=1 form="postForm" ></textarea>
+                    <br>
+                    <input id="submit" type="submit" value="Post QNotes">
+                </form>
+            </div>
+        </div>
+       
+        <div class="footer">
+            
+            <h4>fathul qorib | 2018</h4>
+
+        </div>
+    </div>
+
+    
+    <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: beige;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-items: center;
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 450px;
+    background-color: bisque;
+    height: 540px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.formContainer {
+    margin-top: 20px;
+    background-color: rgb(240, 199, 149);
+    padding: 15px;
+    border-radius: 10px;
+    
+}
+
+input, label {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#submit {
+    width: 150px;
+    padding: 0px;
+    margin-left: 210px;
+    border-radius: 10px;
+}
+#submit:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+}

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Clarendon Blk Bt";
+    src: url(../style/Clarendon\ Blk\ Bt.ttf) format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba( 0, 78, 100, 0.8); 
+    border-radius: 10px;
+}
+body {
+    font-family: 'Merriweather Sans', Helvetica, sans-serif;
+       
+}
+.container {
+    display: grid;
+    grid-template: 70px 550px 50px / 1fr;
+}
+.navbar {
+    background: linear-gradient(to bottom , rgb(17, 138, 178) , rgb(19, 196, 163));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    align-content: center;
+    align-items: center;
+    
+}
+.wrapper {
+    width: 600px;
+    height: 100px;
+    display: grid;
+    grid-template: 1fr / 2fr 3fr;
+    grid-gap: 20px;
+    
+}
+.judul {
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: left;
+    font-size: 60px;
+    font-family: 'Clarendon Blk Bt','Old Standard TT', sans-serif;
+    text-shadow: 0px 0px 4px white;
+    color: white;
+    transition: .4s;
+}
+.judul:hover {
+    text-shadow: 0px 0px 70px white;
+    color: rgb(13, 82, 114);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar img {
+    margin-top: -20px;
+}
+.navbar h1 {
+    margin-top: 15px;
+    grid-column: 1 / 2; 
+    margin-left: 50px;
+    z-index: 6;
+    font-size: 60px;
+}
+.navbar ul{
+    grid-column: 2 / 3; 
+    font-size: 24px;
+    margin-right: 40px;
+}
+.navbar ul li { 
+    display: inline-block;
+    float: right;
+    padding: 46px 20px;  
+    margin-right: 5px; 
+    text-shadow: 0px 0px 5px white;
+    transition: .2s;
+}
+.navbar ul li:hover{
+    padding-top: 30px;
+    text-shadow: 0px 0px 70px white;
+    background: linear-gradient(to top, rgba(56, 56, 56, 0.7), rgba(96, 96, 96, 0));
+}
+.main {
+    /* background-image: url(../img/photo.jpeg); */
+    background: linear-gradient(to bottom , rgb(19, 196, 163), rgb(17, 138, 178) );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    text-shadow: 0px 0px 8px gray;
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+    grid-auto-flow: column;
+    font-family: calibri, san-serif;
+    transition-duration: 12s;
+    align-items: center;
+    height: 100%;
+    width: 100%; 
+    grid-gap: 10px;
+}
+.main:hover {
+    background-position: top;
+}
+#leftContent {
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    max-height: 100%;
+    overflow-y: auto;
+}
+.cardheader {
+    justify-self: end;
+    margin: 10px;
+    opacity: 0.1;
+    display: block;
+}
+.cardheader:hover {
+    opacity: 1;
+}
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template: 20px 1fr 50px/ 1fr;
+    width: 280px;
+    height: 300px;
+    background: rgba(240, 236, 179, 0.9);
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px aliceblue;
+    transition: .2s;
+}
+.card:hover {
+    background-color: rgb(0, 78, 100);
+    color: aliceblue;
+    box-shadow: 0px 0px 15px gray;
+}
+.cardMain {
+    align-self: center;
+    justify-self: center;
+    max-width: 90%;
+    text-align: center;
+}
+.cardFooter {
+    align-self: end;
+    justify-self: end;
+    margin: 25px;
+}
+#rightContent {
+    display: grid;
+    grid-column: 2 / span 1;
+    background-color: rgba(0, 78, 100, 0.4);
+    align-content: center;
+    justify-items: center;
+    height: 85%;
+    border-radius: 10px;
+    margin-right: 15px;
+    color: aliceblue;
+    min-width: 300px;
+}
+#postForm {
+    font-size: 20px;
+}
+#username {
+    height: 30px;
+}
+#postContent {
+    height: 230px;
+}
+#username, #postContent {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 260px;
+    padding: 5px;
+}
+#submit {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 70px;
+    background: rgba(0, 78, 100, 0.5);
+    color: aliceblue;
+    font-size: 16px;
+}
+#submit:hover {
+    background: rgba(0, 78, 100, 1);
+    
+}
+.main h2 {
+    font-size: 34px;
+    color: rgb(128 , 128, 128);
+}
+.main h1 {
+    font-size: 60px;
+    color: rgb(77, 77, 77);
+    line-height: 60px;
+    max-width: 500px;
+}
+.main h5 {
+    color:  rgb(48 , 48, 48);
+    text-shadow: 1px 1px 5px gray;
+}
+
+.footer {
+    background: linear-gradient(to bottom , rgb(17, 138, 178) , rgb(19, 196, 163));
+    text-align: center;
+    padding: 10px;
+}
+.footer h4 {
+    font-family: calibri, serif;
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
